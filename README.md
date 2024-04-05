@@ -2,6 +2,8 @@
 
 This project is a React application that demonstrates the use of react-router-dom for routing and navigation, and axios for fetching data from an API. It was developed following the Week 6 final preparation video from Frontend Simplified.
 
+[Accessible here](https://fes-week-6-final-preparation.vercel.app/)
+
 # Features
 
 - Displays information of all users retrieved from the jsonplaceholder API.
