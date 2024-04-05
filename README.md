@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# User Posts App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application that demonstrates the use of react-router-dom for routing and navigation, and axios for fetching data from an API. It was developed following the Week 6 final preparation video from Frontend Simplified.
 
-## Available Scripts
+# Features
 
-In the project directory, you can run:
+- Displays information of all users retrieved from the jsonplaceholder API.
+- Allows navigation to a specific user's posts by clicking on a user card.
+- Provides a search functionality to search for posts by user ID.
+  Implements a skeleton loading state while fetching data from the API.
 
-### `npm start`
+# Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React: A JavaScript library for building user interfaces.
+- react-router-dom: A library for handling routing and navigation in a React application.
+- axios: A promise-based HTTP client for making API requests.
+- jsonplaceholder: A fake online REST API for testing and prototyping.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Project Structure
 
-### `npm test`
+The project consists of the following components:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- App: The main component that sets up the routing using react-router-dom.
+- Home: Displays a list of user cards fetched from the API.
+- UserCard: A reuseable component for displaying user information.
+- Posts: Displays posts specific to a user based on the user ID passed as a parameter.
+- PostCard: A reusable component for displaying user posts.
 
-### `npm run build`
+# Improvement from original
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I made the info display for user information and user posts into reusable components of UserCard.jsx and PostCard.jsx.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project also includes a fetchUsers function in the Home component to retrieve user data from the API and a fetchPosts function in the Posts component to retrieve posts based on the user ID.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4/4/2024
